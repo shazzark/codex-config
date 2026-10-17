@@ -16,6 +16,14 @@ Investigates software defects by reproducing symptoms, tracing evidence, testing
 
 Example: Use `$debugging-workflow` to find why this API intermittently returns 500, then use `$database-engineering` if evidence points to a query or transaction problem.
 
+### `project-planning`
+
+Turns a software idea or existing-project request into clarified requirements, a proportionate MVP, selected planning documents, and an actionable phased plan. Quick mode suits small utilities; Standard mode suits typical web/mobile/backend products; Advanced mode covers justified complexity such as multi-service systems and AI agents. It does not implement application code.
+
+Example: Use `$project-planning` in Standard mode to plan this mobile app, ask focused questions about material unknowns, propose only relevant documents (including a TRD when technical constraints warrant one), and stop for approval before implementation.
+
+The skill includes reusable templates for project briefs, MVP scope, PRDs, TRDs, app flows, architecture, data, design systems, integrations, risks, testing/acceptance, ADRs, implementation phases, and tasks. Keep assumptions distinct from approved requirements. Planning exercises are not stakeholder validation, feasibility proof, or permission to create repositories, install dependencies, configure cloud services, or deploy. The complete skill installs under `C:\Users\chido\.codex\skills\project-planning`.
+
 ### `authentication-engineering`
 
 Designs and reviews authentication and authorization systems, including account lifecycle, passwords, sessions, JWTs, OAuth/OIDC, MFA, passkeys, and resource/tenant access control. Version 1 gives language-independent principles with initial Node.js, TypeScript, Express, Fastify, Next.js, PostgreSQL, MongoDB, and Redis guidance. It favors maintained identity providers and libraries and does not require custom authentication.

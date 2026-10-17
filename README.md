@@ -52,6 +52,14 @@ Pair it with `$engineering-workflow` for substantial phased implementation, veri
 
 Scenario exercises are recorded in [skills/backend-architecture/VALIDATION.md](skills/backend-architecture/VALIDATION.md). Detailed guidance lives in [Node.js and TypeScript patterns](skills/backend-architecture/references/node-typescript.md) and [quality and operations](skills/backend-architecture/references/quality-and-operations.md).
 
+### `design-system-engineering`
+
+Plans, implements, maintains, and reviews consistent accessible interfaces and design systems. Its principles are framework-independent, with initial guidance for React, Next.js, TypeScript, Tailwind CSS, React Native, Expo, and Figma-to-code workflows. It covers semantic tokens, themes, responsive foundations, reusable components, accessibility, platform differences, design-system maintenance, and verification.
+
+Example: Use `$design-system-engineering` to improve consistency in this React/Tailwind app while preserving its visual identity, checking responsive layouts, and adding accessible component states. For Figma work, pair it with the relevant installed Figma workflow skill and tools.
+
+Limitations: design exercises do not prove accessibility conformance, device/browser behavior, or visual fidelity. Verify the actual implementation with the appropriate automated and manual checks; do not claim pixel-perfect matching without a visual comparison. The complete skill installs under `C:\Users\chido\.codex\skills\design-system-engineering`.
+
 ## Installation
 
 Each skill is a directory containing `SKILL.md` and optional references. Synchronize the complete skill directory to the corresponding name under `C:\Users\chido\.codex\skills`; do not replace unrelated global skills. Verify the installed tree against the repository source after synchronization.

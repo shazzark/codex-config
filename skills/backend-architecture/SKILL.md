@@ -37,6 +37,8 @@ Read [Node.js and TypeScript patterns](references/node-typescript.md) for practi
 
 Read [Backend quality and operations](references/quality-and-operations.md) for API contracts, testing, observability, performance, deployment, and review checks.
 
+Read [System-design decisions](references/system-design-decisions.md) when comparing architecture options, setting service boundaries, planning for growth or failure, or recording a significant trade-off. Use it as decision guidance, not a required architecture template.
+
 ## Review checklist
 
 Before recommending or completing a design, check that:

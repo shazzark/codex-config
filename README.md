@@ -4,6 +4,14 @@ This repository contains reusable Codex skills and their supporting references. 
 
 ## Skills
 
+### `authentication-engineering`
+
+Designs and reviews authentication and authorization systems, including account lifecycle, passwords, sessions, JWTs, OAuth/OIDC, MFA, passkeys, and resource/tenant access control. Version 1 gives language-independent principles with initial Node.js, TypeScript, Express, Fastify, Next.js, PostgreSQL, MongoDB, and Redis guidance. It favors maintained identity providers and libraries and does not require custom authentication.
+
+Examples: Use `$authentication-engineering` with `$backend-architecture` to review this Next.js OIDC login and verify access checks near the data layer. Use `$authentication-engineering` and `$database-engineering` to design refresh-token rotation and revocation storage. Pair it with `$security-engineering` for broader application threats, `$engineering-workflow` for implementation, `$debugging-workflow` for defects, and `$plain-english-explainer` for teaching. Skill sources and references install together under `C:\Users\chido\.codex\skills\authentication-engineering`.
+
+Limitations: this skill guides design and review; it is not a compliance certification, penetration test, or assurance that a system is secure. Provider and framework behavior changes, so confirm current documentation and test the target configuration.
+
 ### `database-engineering`
 
 Designs, implements, reviews, optimizes, secures, and maintains database systems. Version 1 covers PostgreSQL, MySQL, MongoDB, and Redis, with reusable principles for other data stores. It focuses on database models, queries, transactions, migrations, security, and operational reliability; it does not force one engine or schema design.

@@ -20,6 +20,14 @@ Example: Use `$security-engineering` with `$engineering-workflow` to review this
 
 Limitations: scenario reviews and automated scans do not prove a system is secure. Security testing must be authorized and scoped; verify current framework, provider, and jurisdiction-specific requirements for each application.
 
+### `caching-engineering`
+
+Designs and reviews caches across Node.js, TypeScript, Express, Fastify, Next.js, PostgreSQL, MongoDB, Redis, HTTP, CDNs, and TanStack Query. It covers freshness, invalidation, stampedes, failure handling, cache isolation, observability, and performance verification. Caching is recommended only when requirements and measurements justify its complexity.
+
+Example: Use `$caching-engineering` with `$database-engineering` to plan invalidation after a write, or with `$backend-architecture` to decide where a cache belongs. Pair it with `$security-engineering` for private-data isolation, `$debugging-workflow` for stale-data/performance defects, and `$engineering-workflow` for a verified implementation. The complete skill installs under `C:\Users\chido\.codex\skills\caching-engineering`.
+
+Limitations: design exercises and cache metrics alone do not demonstrate correct invalidation or faster behavior. Verify against the actual workload, framework versions, and deployment topology.
+
 ### `database-engineering`
 
 Designs, implements, reviews, optimizes, secures, and maintains database systems. Version 1 covers PostgreSQL, MySQL, MongoDB, and Redis, with reusable principles for other data stores. It focuses on database models, queries, transactions, migrations, security, and operational reliability; it does not force one engine or schema design.

@@ -12,6 +12,14 @@ Examples: Use `$authentication-engineering` with `$backend-architecture` to revi
 
 Limitations: this skill guides design and review; it is not a compliance certification, penetration test, or assurance that a system is secure. Provider and framework behavior changes, so confirm current documentation and test the target configuration.
 
+### `security-engineering`
+
+Threat-models and secures applications, APIs, data paths, dependencies, containers, CI/CD, and deployments. Version 1 provides language-independent principles with detailed guidance for Node.js, TypeScript, React, Next.js, Express, Fastify, PostgreSQL, MongoDB, and Redis. It covers common OWASP web/API risks, input and output handling, authorization boundaries, secrets, integrations, testing, and vulnerability response.
+
+Example: Use `$security-engineering` with `$engineering-workflow` to review this API's authorization and add security regression checks. Pair it with `$authentication-engineering` for identity flows, `$database-engineering` for database design, `$backend-architecture` for module boundaries, and `$debugging-workflow` for defect investigation. Install the complete skill directory at `C:\Users\chido\.codex\skills\security-engineering`.
+
+Limitations: scenario reviews and automated scans do not prove a system is secure. Security testing must be authorized and scoped; verify current framework, provider, and jurisdiction-specific requirements for each application.
+
 ### `database-engineering`
 
 Designs, implements, reviews, optimizes, secures, and maintains database systems. Version 1 covers PostgreSQL, MySQL, MongoDB, and Redis, with reusable principles for other data stores. It focuses on database models, queries, transactions, migrations, security, and operational reliability; it does not force one engine or schema design.

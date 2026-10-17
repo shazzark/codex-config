@@ -76,6 +76,14 @@ Examples: Use `$devops-infrastructure` with `$backend-architecture` to container
 
 Limitations: it does not prescribe a cloud provider or production topology, and a Compose setup is not automatically production-ready. Design reviews do not prove that a build, deployment, backup, or restore works; use the target environment and report only checks actually performed. The complete skill installs under `C:\Users\chido\.codex\skills\devops-infrastructure`.
 
+### `testing-engineering`
+
+Helps Codex choose, write, run, debug, and maintain meaningful tests across frontend, backend, APIs, databases, distributed services, and mobile apps. Initial detailed guidance covers TypeScript/JavaScript, Node.js, React/Next.js, Express/Fastify, PostgreSQL, MongoDB, Redis, and React Native, including Vitest, Jest, React Testing Library, Supertest, Fastify injection, and Playwright.
+
+Examples: Use `$testing-engineering` to test this Fastify endpoint against an isolated PostgreSQL database. Review these Playwright tests for realistic user flows and brittle selectors. Pair with `$debugging-workflow` to diagnose this flaky async test.
+
+Limitations: test plans and passing suites cover only their exercised behaviors. They do not prove production correctness, complete security, capacity, accessibility, or recovery. The skill requires reporting exactly which checks ran; use isolated resources and do not target production data without explicit authorization.
+
 ## Installation
 
 Each skill is a directory containing `SKILL.md` and optional references. Synchronize the complete skill directory to the corresponding name under `C:\Users\chido\.codex\skills`; do not replace unrelated global skills. Verify the installed tree against the repository source after synchronization.

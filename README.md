@@ -84,6 +84,14 @@ Examples: Use `$testing-engineering` to test this Fastify endpoint against an is
 
 Limitations: test plans and passing suites cover only their exercised behaviors. They do not prove production correctness, complete security, capacity, accessibility, or recovery. The skill requires reporting exactly which checks ran; use isolated resources and do not target production data without explicit authorization.
 
+### `networking-engineering`
+
+Designs, implements, diagnoses, secures, and verifies communication between applications and services. It provides language-independent principles with initial guidance for Node.js/TypeScript, HTTP clients, WebSockets and Socket.IO, Docker networking, PostgreSQL, MongoDB, Redis, reverse proxies, and distributed services. It covers DNS, transport and TLS, retries, connection lifecycle, service discovery, real-time connections, safe diagnostics, and failure handling.
+
+Examples: Use `$networking-engineering` with `$debugging-workflow` to trace why a Node.js API cannot reach PostgreSQL inside Docker Compose. Review this HTTP client's timeout and retry behavior for duplicate-write risk. Diagnose Socket.IO disconnects behind a reverse proxy without assuming sticky sessions are required.
+
+Limitations: this skill focuses on software communication paths, not general network-device or telecommunications administration. Scenario reviews and local checks do not prove production reachability; do not probe unauthorized systems or weaken TLS, firewalls, or access controls to restore connectivity. Install the complete skill directory at `C:\Users\chido\.codex\skills\networking-engineering`.
+
 ## Installation
 
 Each skill is a directory containing `SKILL.md` and optional references. Synchronize the complete skill directory to the corresponding name under `C:\Users\chido\.codex\skills`; do not replace unrelated global skills. Verify the installed tree against the repository source after synchronization.

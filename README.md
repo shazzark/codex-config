@@ -68,6 +68,14 @@ Examples: Use `$language-engineering` to refactor this JavaScript module into st
 
 Limitations: detailed guidance currently covers TypeScript and JavaScript only. Python, Go, PHP, Java, and other languages have not yet received language-specific references; consult their current ecosystem documentation and project conventions.
 
+### `devops-infrastructure`
+
+Plans, implements, reviews, and troubleshoots container builds, local Compose services, GitHub Actions, deployments, observability, reliability, and operational recovery. It provides language-independent principles with initial Node.js/TypeScript, Docker/Compose, PostgreSQL, MongoDB, Redis, GitHub Actions, and cloud deployment guidance.
+
+Examples: Use `$devops-infrastructure` with `$backend-architecture` to containerize this API and its local services. Review this GitHub Actions workflow for least privilege and deployment gates. Plan a production rollout with `$database-engineering` for migration safety.
+
+Limitations: it does not prescribe a cloud provider or production topology, and a Compose setup is not automatically production-ready. Design reviews do not prove that a build, deployment, backup, or restore works; use the target environment and report only checks actually performed. The complete skill installs under `C:\Users\chido\.codex\skills\devops-infrastructure`.
+
 ## Installation
 
 Each skill is a directory containing `SKILL.md` and optional references. Synchronize the complete skill directory to the corresponding name under `C:\Users\chido\.codex\skills`; do not replace unrelated global skills. Verify the installed tree against the repository source after synchronization.

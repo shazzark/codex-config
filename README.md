@@ -4,6 +4,18 @@ This repository contains reusable Codex skills and their supporting references. 
 
 ## Skills
 
+### `engineering-workflow`
+
+Coordinates substantial repository work through inspection, proportional planning, incremental implementation, verification, review, documentation, and safe local checkpoints. Use it for features, refactors, or multi-phase changes; it is not needed for trivial edits or simple questions.
+
+Example: Use `$engineering-workflow` to implement this feature in phases, run the relevant checks, review the diff, and create a focused local checkpoint if verification succeeds.
+
+### `debugging-workflow`
+
+Investigates software defects by reproducing symptoms, tracing evidence, testing hypotheses, finding the root cause, applying a focused fix, and verifying it with regression checks. Use it when diagnosing why behavior is broken; combine it with a domain skill when the confirmed cause needs specialized design guidance.
+
+Example: Use `$debugging-workflow` to find why this API intermittently returns 500, then use `$database-engineering` if evidence points to a query or transaction problem.
+
 ### `authentication-engineering`
 
 Designs and reviews authentication and authorization systems, including account lifecycle, passwords, sessions, JWTs, OAuth/OIDC, MFA, passkeys, and resource/tenant access control. Version 1 gives language-independent principles with initial Node.js, TypeScript, Express, Fastify, Next.js, PostgreSQL, MongoDB, and Redis guidance. It favors maintained identity providers and libraries and does not require custom authentication.
@@ -31,6 +43,8 @@ Limitations: design exercises and cache metrics alone do not demonstrate correct
 ### `database-engineering`
 
 Designs, implements, reviews, optimizes, secures, and maintains database systems. Version 1 covers PostgreSQL, MySQL, MongoDB, and Redis, with reusable principles for other data stores. It focuses on database models, queries, transactions, migrations, security, and operational reliability; it does not force one engine or schema design.
+
+Redis responsibility: use `$caching-engineering` for cache strategy, freshness, invalidation, and request-path behavior. Use `$database-engineering` for Redis data structures, durable state, persistence, eviction, security, and operations. Combine them when Redis-specific limits or failure behavior affect cache correctness.
 
 Example: “Use `$database-engineering` with `$engineering-workflow` to plan a backward-compatible PostgreSQL migration and verify it against the test database.” The complete skill and technology references are installed together under `C:\Users\chido\.codex\skills\database-engineering`.
 

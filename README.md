@@ -4,6 +4,12 @@ This repository contains reusable Codex skills and their supporting references. 
 
 ## Skills
 
+### `plain-english-explainer`
+
+Explains technical concepts, code, errors, architecture, and implementation results in clear everyday English while preserving exact technical details and accuracy. It is also the default communication preference in the global `C:\Users\chido\.codex\AGENTS.md` instructions.
+
+Invoke it to learn a concept or request a focused explanation. Example: “Use `$plain-english-explainer` to explain this TypeScript error and the safest fix.” Routine implementation reports stay concise and distinguish checks that ran from work that was not verified.
+
 ### `backend-architecture`
 
 Designs, builds, extends, and reviews maintainable backend applications. Version 1 specializes in Node.js and TypeScript, especially Express, Fastify, PostgreSQL, MongoDB, Redis, and background workers. Its architecture principles remain useful across languages, but detailed examples and ecosystem guidance are currently Node.js focused.

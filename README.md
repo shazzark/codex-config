@@ -60,6 +60,14 @@ Example: Use `$design-system-engineering` to improve consistency in this React/T
 
 Limitations: design exercises do not prove accessibility conformance, device/browser behavior, or visual fidelity. Verify the actual implementation with the appropriate automated and manual checks; do not claim pixel-perfect matching without a visual comparison. The complete skill installs under `C:\Users\chido\.codex\skills\design-system-engineering`.
 
+### `language-engineering`
+
+Helps Codex write, refactor, review, and test readable, idiomatic, type-safe code. Its core principles apply across languages, with detailed version 1 guidance for TypeScript and JavaScript, including strict typing, runtime input validation, async behavior, modules, errors, compatibility, and quality checks.
+
+Examples: Use `$language-engineering` to refactor this JavaScript module into strict TypeScript while preserving behavior. Review this TypeScript API for useful type boundaries and unnecessarily complex generics. Pair with `$debugging-workflow` to investigate an async failure and add a regression test.
+
+Limitations: detailed guidance currently covers TypeScript and JavaScript only. Python, Go, PHP, Java, and other languages have not yet received language-specific references; consult their current ecosystem documentation and project conventions.
+
 ## Installation
 
 Each skill is a directory containing `SKILL.md` and optional references. Synchronize the complete skill directory to the corresponding name under `C:\Users\chido\.codex\skills`; do not replace unrelated global skills. Verify the installed tree against the repository source after synchronization.

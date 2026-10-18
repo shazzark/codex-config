@@ -1,6 +1,6 @@
 # Codex Configuration Skills
 
-This repository contains reusable Codex skills and their supporting references. Skills here are maintained as source and synchronized to the user's global Codex skills directory at `C:\Users\chido\.codex\skills`.
+This repository contains reusable Codex skills and their supporting references. Skills here are maintained as source and synchronized to the user's global Codex skills directory at `$HOME/.codex/skills`.
 
 ## Skills
 
@@ -22,13 +22,13 @@ Turns a software idea or existing-project request into clarified requirements, a
 
 Example: Use `$project-planning` in Standard mode to plan this mobile app, ask focused questions about material unknowns, propose only relevant documents (including a TRD when technical constraints warrant one), and stop for approval before implementation.
 
-The skill includes reusable templates for project briefs, MVP scope, PRDs, TRDs, app flows, architecture, data, design systems, integrations, risks, testing/acceptance, ADRs, implementation phases, and tasks. Keep assumptions distinct from approved requirements. Planning exercises are not stakeholder validation, feasibility proof, or permission to create repositories, install dependencies, configure cloud services, or deploy. The complete skill installs under `C:\Users\chido\.codex\skills\project-planning`.
+The skill includes reusable templates for project briefs, MVP scope, PRDs, TRDs, app flows, architecture, data, design systems, integrations, risks, testing/acceptance, ADRs, implementation phases, and tasks. Keep assumptions distinct from approved requirements. Planning exercises are not stakeholder validation, feasibility proof, or permission to create repositories, install dependencies, configure cloud services, or deploy. The complete skill installs under `$HOME/.codex/skills/project-planning`.
 
 ### `authentication-engineering`
 
 Designs and reviews authentication and authorization systems, including account lifecycle, passwords, sessions, JWTs, OAuth/OIDC, MFA, passkeys, and resource/tenant access control. Version 1 gives language-independent principles with initial Node.js, TypeScript, Express, Fastify, Next.js, PostgreSQL, MongoDB, and Redis guidance. It favors maintained identity providers and libraries and does not require custom authentication.
 
-Examples: Use `$authentication-engineering` with `$backend-architecture` to review this Next.js OIDC login and verify access checks near the data layer. Use `$authentication-engineering` and `$database-engineering` to design refresh-token rotation and revocation storage. Pair it with `$security-engineering` for broader application threats, `$engineering-workflow` for implementation, `$debugging-workflow` for defects, and `$plain-english-explainer` for teaching. Skill sources and references install together under `C:\Users\chido\.codex\skills\authentication-engineering`.
+Examples: Use `$authentication-engineering` with `$backend-architecture` to review this Next.js OIDC login and verify access checks near the data layer. Use `$authentication-engineering` and `$database-engineering` to design refresh-token rotation and revocation storage. Pair it with `$security-engineering` for broader application threats, `$engineering-workflow` for implementation, `$debugging-workflow` for defects, and `$plain-english-explainer` for teaching. Skill sources and references install together under `$HOME/.codex/skills/authentication-engineering`.
 
 Limitations: this skill guides design and review; it is not a compliance certification, penetration test, or assurance that a system is secure. Provider and framework behavior changes, so confirm current documentation and test the target configuration.
 
@@ -36,7 +36,7 @@ Limitations: this skill guides design and review; it is not a compliance certifi
 
 Threat-models and secures applications, APIs, data paths, dependencies, containers, CI/CD, and deployments. Version 1 provides language-independent principles with detailed guidance for Node.js, TypeScript, React, Next.js, Express, Fastify, PostgreSQL, MongoDB, and Redis. It covers common OWASP web/API risks, input and output handling, authorization boundaries, secrets, integrations, testing, and vulnerability response.
 
-Example: Use `$security-engineering` with `$engineering-workflow` to review this API's authorization and add security regression checks. Pair it with `$authentication-engineering` for identity flows, `$database-engineering` for database design, `$backend-architecture` for module boundaries, and `$debugging-workflow` for defect investigation. Install the complete skill directory at `C:\Users\chido\.codex\skills\security-engineering`.
+Example: Use `$security-engineering` with `$engineering-workflow` to review this API's authorization and add security regression checks. Pair it with `$authentication-engineering` for identity flows, `$database-engineering` for database design, `$backend-architecture` for module boundaries, and `$debugging-workflow` for defect investigation. Install the complete skill directory at `$HOME/.codex/skills/security-engineering`.
 
 Limitations: scenario reviews and automated scans do not prove a system is secure. Security testing must be authorized and scoped; verify current framework, provider, and jurisdiction-specific requirements for each application.
 
@@ -44,7 +44,7 @@ Limitations: scenario reviews and automated scans do not prove a system is secur
 
 Designs and reviews caches across Node.js, TypeScript, Express, Fastify, Next.js, PostgreSQL, MongoDB, Redis, HTTP, CDNs, and TanStack Query. It covers freshness, invalidation, stampedes, failure handling, cache isolation, observability, and performance verification. Caching is recommended only when requirements and measurements justify its complexity.
 
-Example: Use `$caching-engineering` with `$database-engineering` to plan invalidation after a write, or with `$backend-architecture` to decide where a cache belongs. Pair it with `$security-engineering` for private-data isolation, `$debugging-workflow` for stale-data/performance defects, and `$engineering-workflow` for a verified implementation. The complete skill installs under `C:\Users\chido\.codex\skills\caching-engineering`.
+Example: Use `$caching-engineering` with `$database-engineering` to plan invalidation after a write, or with `$backend-architecture` to decide where a cache belongs. Pair it with `$security-engineering` for private-data isolation, `$debugging-workflow` for stale-data/performance defects, and `$engineering-workflow` for a verified implementation. The complete skill installs under `$HOME/.codex/skills/caching-engineering`.
 
 Limitations: design exercises and cache metrics alone do not demonstrate correct invalidation or faster behavior. Verify against the actual workload, framework versions, and deployment topology.
 
@@ -54,11 +54,11 @@ Designs, implements, reviews, optimizes, secures, and maintains database systems
 
 Redis responsibility: use `$caching-engineering` for cache strategy, freshness, invalidation, and request-path behavior. Use `$database-engineering` for Redis data structures, durable state, persistence, eviction, security, and operations. Combine them when Redis-specific limits or failure behavior affect cache correctness.
 
-Example: “Use `$database-engineering` with `$engineering-workflow` to plan a backward-compatible PostgreSQL migration and verify it against the test database.” The complete skill and technology references are installed together under `C:\Users\chido\.codex\skills\database-engineering`.
+Example: “Use `$database-engineering` with `$engineering-workflow` to plan a backward-compatible PostgreSQL migration and verify it against the test database.” The complete skill and technology references are installed together under `$HOME/.codex/skills/database-engineering`.
 
 ### `plain-english-explainer`
 
-Explains technical concepts, code, errors, architecture, and implementation results in clear everyday English while preserving exact technical details and accuracy. It is also the default communication preference in the global `C:\Users\chido\.codex\AGENTS.md` instructions.
+Explains technical concepts, code, errors, architecture, and implementation results in clear everyday English while preserving exact technical details and accuracy. It is also the default communication preference in the global `$HOME/.codex/AGENTS.md` instructions.
 
 Invoke it to learn a concept or request a focused explanation. Example: “Use `$plain-english-explainer` to explain this TypeScript error and the safest fix.” Routine implementation reports stay concise and distinguish checks that ran from work that was not verified.
 
@@ -80,7 +80,7 @@ Plans, implements, maintains, and reviews consistent accessible interfaces and d
 
 Example: Use `$design-system-engineering` to improve consistency in this React/Tailwind app while preserving its visual identity, checking responsive layouts, and adding accessible component states. For Figma work, pair it with the relevant installed Figma workflow skill and tools.
 
-Limitations: design exercises do not prove accessibility conformance, device/browser behavior, or visual fidelity. Verify the actual implementation with the appropriate automated and manual checks; do not claim pixel-perfect matching without a visual comparison. The complete skill installs under `C:\Users\chido\.codex\skills\design-system-engineering`.
+Limitations: design exercises do not prove accessibility conformance, device/browser behavior, or visual fidelity. Verify the actual implementation with the appropriate automated and manual checks; do not claim pixel-perfect matching without a visual comparison. The complete skill installs under `$HOME/.codex/skills/design-system-engineering`.
 
 ### `language-engineering`
 
@@ -96,7 +96,7 @@ Plans, implements, reviews, and troubleshoots container builds, local Compose se
 
 Examples: Use `$devops-infrastructure` with `$backend-architecture` to containerize this API and its local services. Review this GitHub Actions workflow for least privilege and deployment gates. Plan a production rollout with `$database-engineering` for migration safety.
 
-Limitations: it does not prescribe a cloud provider or production topology, and a Compose setup is not automatically production-ready. Design reviews do not prove that a build, deployment, backup, or restore works; use the target environment and report only checks actually performed. The complete skill installs under `C:\Users\chido\.codex\skills\devops-infrastructure`.
+Limitations: it does not prescribe a cloud provider or production topology, and a Compose setup is not automatically production-ready. Design reviews do not prove that a build, deployment, backup, or restore works; use the target environment and report only checks actually performed. The complete skill installs under `$HOME/.codex/skills/devops-infrastructure`.
 
 ### `testing-engineering`
 
@@ -112,8 +112,40 @@ Designs, implements, diagnoses, secures, and verifies communication between appl
 
 Examples: Use `$networking-engineering` with `$debugging-workflow` to trace why a Node.js API cannot reach PostgreSQL inside Docker Compose. Review this HTTP client's timeout and retry behavior for duplicate-write risk. Diagnose Socket.IO disconnects behind a reverse proxy without assuming sticky sessions are required.
 
-Limitations: this skill focuses on software communication paths, not general network-device or telecommunications administration. Scenario reviews and local checks do not prove production reachability; do not probe unauthorized systems or weaken TLS, firewalls, or access controls to restore connectivity. Install the complete skill directory at `C:\Users\chido\.codex\skills\networking-engineering`.
+Limitations: this skill focuses on software communication paths, not general network-device or telecommunications administration. Scenario reviews and local checks do not prove production reachability; do not probe unauthorized systems or weaken TLS, firewalls, or access controls to restore connectivity. Install the complete skill directory at `$HOME/.codex/skills/networking-engineering`.
 
 ## Installation
 
-Each skill is a directory containing `SKILL.md` and optional references. Synchronize the complete skill directory to the corresponding name under `C:\Users\chido\.codex\skills`; do not replace unrelated global skills. Verify the installed tree against the repository source after synchronization.
+Each skill is a directory containing `SKILL.md` and optional references. Install a skill by copying its complete directory from `skills/` into the global Codex skills folder. This makes it available across repositories for your user account.
+
+Before updating an existing installation, inspect or back it up. The examples below stop if the destination already exists, so they do not silently overwrite a global skill. Replace `project-planning` with any directory name under `skills/`.
+
+### Windows PowerShell
+
+```powershell
+$ErrorActionPreference = "Stop"
+$skill = "project-planning"
+$source = Join-Path (Get-Location) "skills\$skill"
+$destination = Join-Path $env:USERPROFILE ".codex\skills\$skill"
+if (-not (Test-Path -LiteralPath $source -PathType Container)) { throw "Skill source not found: $source" }
+if (Test-Path -LiteralPath $destination) { throw "Destination exists; back it up and inspect it before updating: $destination" }
+New-Item -ItemType Directory -Path (Split-Path -Parent $destination) -Force | Out-Null
+Copy-Item -LiteralPath $source -Destination $destination -Recurse
+```
+
+### macOS and Linux
+
+```sh
+skill=project-planning
+source="./skills/$skill"
+destination="$HOME/.codex/skills/$skill"
+test -d "$source" || { printf 'Skill source not found: %s\n' "$source" >&2; exit 1; }
+if [ -e "$destination" ]; then
+  printf 'Destination exists; back it up and inspect it before updating: %s\n' "$destination" >&2
+  exit 1
+fi
+mkdir -p "$(dirname "$destination")"
+cp -R "$source" "$destination"
+```
+
+The standard global location is `$HOME/.codex/skills` (PowerShell can use `$env:USERPROFILE\.codex\skills`). Copying a skill folder includes its `SKILL.md` and references. Restart Codex or start a new session if the skill list does not refresh. Keep project-specific skills in the repository when they should not be available globally.

@@ -9,7 +9,7 @@ Document code so users and maintainers can understand its contracts, constraints
 
 ## Choose a mode
 
-- **Document mode:** Add or update comments, docstrings, API documentation, or focused repository documentation requested by the user.
+- **Document mode:** Add or update focused comments, docstrings, API documentation, or repository documentation when it provides real value to the intended reader and fits the user's request.
 - **Explain mode:** Explain selected code in plain English without editing it unless the user asks for edits.
 - **Review mode:** Identify missing, outdated, misleading, and redundant comments; assess documentation accuracy, usefulness, conventions, and contract coverage. Report evidence-based findings without modifying files. Use `$review-agent` when the user requests a broader acceptance review or when an independent review would materially improve a substantial documentation change.
 

@@ -72,7 +72,7 @@ Invoke it to learn a concept or request a focused explanation. Example: “Use `
 
 ### `code-documentation`
 
-Adds, updates, reviews, or explains code documentation grounded in the implementation. It covers useful source comments, language-appropriate docstrings and API comments, focused repository docs, and plain-English explanations of selected code. It emphasizes accurate public contracts, non-obvious rationale, project conventions, and keeping documentation changes separate from runtime behavior.
+Adds, updates, reviews, or explains code documentation across languages. It covers useful source comments, language-appropriate docstrings and API comments, focused repository docs, and plain-English explanations of selected code. It emphasizes accurate public contracts, non-obvious rationale, project conventions, and keeping documentation aligned with implementation changes without changing runtime behavior.
 
 Example: Use `$code-documentation` to document the public contract and retry constraints of this client without changing its behavior, or to explain how the selected function moves data through the module.
 

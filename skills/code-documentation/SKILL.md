@@ -1,6 +1,6 @@
 ---
 name: code-documentation
-description: Document existing code and explain selected code by grounding concise comments, API docs, and repository guidance in the implementation. Use when adding, updating, reviewing, or explaining documentation for source code.
+description: Document and explain code across languages using concise, implementation-grounded comments, API docs, and repository guidance. Use when adding, updating, reviewing, or explaining source code documentation.
 ---
 
 # Code Documentation
@@ -27,6 +27,7 @@ Document code so users and maintainers can understand its contracts, constraints
 - Use inline comments for non-obvious rationale, invariants, algorithm choices, constraints, or workarounds. Explain why a surprising choice is necessary and, when useful, what would break if it changed.
 - Use docstrings and API comments for reader-facing contracts. Keep parameter names, return behavior, exceptions, side effects, defaults, and limits aligned with the implementation.
 - Use repository documentation for setup, usage, architecture, and workflows that span multiple files. Link to the authoritative explanation instead of duplicating it.
+- Treat the implementation as the source of truth; update affected docs with code changes and remove or revise explanations when behavior changes.
 - Keep comments concise and technically accurate. Avoid blanket rules to document every function or line, and avoid promising guarantees the implementation does not provide.
 
 ## Explain mode

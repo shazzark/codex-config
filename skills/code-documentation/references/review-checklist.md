@@ -15,4 +15,4 @@ Review mode is read-only: report findings and recommendations without editing fi
 - Does the documentation avoid secrets, private data, redundant copies, and unnecessary per-line commentary?
 - Did the change leave executable behavior untouched? If source files changed, inspect the diff for changes outside comments/docstrings and report any uncertainty.
 
-For review findings, identify the affected file or symbol, explain the mismatch or omission, and prioritize reader impact. Separate confirmed inaccuracies from optional improvements.
+For each finding, identify the affected file or symbol, cite evidence, explain reader impact, and recommend a correction. Separate confirmed inaccuracies from optional improvements.

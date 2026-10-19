@@ -1,6 +1,6 @@
 ---
 name: code-documentation
-description: Document and explain code across languages using concise, implementation-grounded comments, API docs, and repository guidance. Use when adding, updating, reviewing, or explaining source code documentation.
+description: Apply documentation guidance automatically during code changes when useful; add, update, review, or explain implementation-grounded code documentation across languages.
 ---
 
 # Code Documentation
@@ -10,7 +10,7 @@ Document code so users and maintainers can understand its contracts, constraints
 ## Choose a mode
 
 - **Review mode** (when asked to review comments or code docs): Find missing, outdated, misleading, and redundant comments. Report each finding with its location, evidence, impact, and recommendation; distinguish confirmed inaccuracies from optional improvements. This mode is read-only. Use `$review-agent` for broader reviews against approved requirements.
-- **Document mode** (when asked to add or update documentation): Add concise comments, docstrings, API docs, or repository guidance only where they materially help the reader. Explain non-obvious logic, assumptions, constraints, algorithms, and side effects. Follow [language documentation standards](references/language-standards.md), keep public contracts accurate, and preserve executable behavior.
+- **Document mode** (when explicitly asked for documentation, or automatically during code implementation/modification): Inspect the relevant code first. Add concise comments, docstrings, API docs, or repository guidance only where they materially help the reader. Prioritize complex algorithms/calculations, non-obvious business rules, security-sensitive logic and trust boundaries, concurrency/retries/caching/failure recovery, important constraints or architectural decisions, and useful public API docs. Explain assumptions and side effects accurately; follow [language documentation standards](references/language-standards.md); update misleading or outdated comments; preserve runtime behavior and public contracts. Skip obvious statements and routine per-function comments.
 - **Explain mode** (when asked how selected code works): Explain it in plain English, tracing control flow, data flow, dependencies, and design decisions. Give examples when they help. Do not modify files unless explicitly asked.
 
 For general technical teaching, use `$plain-english-explainer`. For implementation, testing, security, or other engineering concerns beyond documentation, use the relevant engineering skill; do not reproduce its workflow here.
@@ -33,6 +33,7 @@ Do not reproduce credentials, secret values, or private data in documentation, f
 - Use repository documentation for setup, usage, architecture, and workflows that span multiple files. Link to the authoritative explanation instead of duplicating it.
 - Treat the implementation as the source of truth; update affected docs with code changes and remove or revise explanations when behavior changes.
 - Keep comments concise and technically accurate. Avoid blanket rules to document every function or line, and avoid promising guarantees the implementation does not provide.
+- For documentation-only edits, inspect the diff to confirm executable logic was not changed. If code changes are also requested, keep documentation changes separate and verify behavior through the relevant project checks.
 
 ## Explain accurately
 

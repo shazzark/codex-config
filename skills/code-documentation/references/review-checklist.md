@@ -2,6 +2,8 @@
 
 Use the applicable questions; skip items that do not fit the change.
 
+Review mode is read-only: report findings and recommendations without editing files.
+
 - Does the documentation help its intended reader understand a contract, decision, constraint, or workflow?
 - Are comments missing where they would explain important non-obvious behavior, outdated after code changes, misleading, or redundant with clear code or authoritative documentation?
 - Is every factual statement supported by the implementation, tests, or an explicit requirement?

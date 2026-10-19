@@ -4,6 +4,14 @@ This repository contains reusable Codex skills and their supporting references. 
 
 ## Skills
 
+### `review-agent`
+
+Reviews a completed change or delivery phase against its approved requirements and acceptance criteria. It inspects relevant code and Git diffs, investigates potential defects using evidence, runs practical non-destructive checks, and reports prioritized findings, verification results, unresolved risks, and an acceptance verdict. Findings distinguish confirmed defects, plausible risks, and optional improvements. The workflow is read-only by default and does not modify code, commit, push, deploy, delete files, install dependencies, or expose secrets.
+
+Example: Use `$review-agent` to compare this completed phase with its approved acceptance criteria, inspect the relevant diff and code context, run safe checks where practical, and return a prioritized report.
+
+The skill includes a review checklist, standardized report template, integration guidance for the existing engineering skills, and validation instructions. A documented read-only review exercise is in [VALIDATION.md](skills/review-agent/VALIDATION.md). Run the official skill-creator validator in Python UTF-8 mode as described in [the validation instructions](skills/review-agent/references/validation.md).
+
 ### `engineering-workflow`
 
 Coordinates substantial repository work through inspection, proportional planning, incremental implementation, verification, review, documentation, and safe local checkpoints. Use it for features, refactors, or multi-phase changes; it is not needed for trivial edits or simple questions.

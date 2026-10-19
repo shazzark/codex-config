@@ -70,6 +70,14 @@ Explains technical concepts, code, errors, architecture, and implementation resu
 
 Invoke it to learn a concept or request a focused explanation. Example: “Use `$plain-english-explainer` to explain this TypeScript error and the safest fix.” Routine implementation reports stay concise and distinguish checks that ran from work that was not verified.
 
+### `code-documentation`
+
+Adds, updates, reviews, or explains code documentation grounded in the implementation. It covers useful source comments, language-appropriate docstrings and API comments, focused repository docs, and plain-English explanations of selected code. It emphasizes accurate public contracts, non-obvious rationale, project conventions, and keeping documentation changes separate from runtime behavior.
+
+Example: Use `$code-documentation` to document the public contract and retry constraints of this client without changing its behavior, or to explain how the selected function moves data through the module.
+
+The skill includes language convention references, a documentation review checklist, and validation instructions. Use `$plain-english-explainer` for broader technical teaching; use `$review-agent` for a broader review against approved requirements.
+
 ### `backend-architecture`
 
 Designs, builds, extends, and reviews maintainable backend applications. Version 1 specializes in Node.js and TypeScript, especially Express, Fastify, PostgreSQL, MongoDB, Redis, and background workers. It also provides requirement-driven system-design guidance for service boundaries, scaling, distributed communication, reliability, operational fit, and architecture decisions. Its principles remain useful across languages, but detailed implementation examples and ecosystem guidance are currently Node.js focused.

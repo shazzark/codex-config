@@ -26,6 +26,7 @@ Do not assume an incomplete-looking working tree is disposable.
 For non-trivial work, determine:
 
 - the objective,
+- observable completion criteria derived from the user's actual requirements,
 - relevant existing architecture,
 - dependencies and constraints,
 - affected components,
@@ -33,6 +34,7 @@ For non-trivial work, determine:
 - meaningful risks.
 
 Keep planning proportional to the task. Do not create ceremony for small changes.
+Formal planning documents are not required for small changes.
 
 When `task.md` or another execution plan exists, use it as the current execution-state source unless repository instructions say otherwise.
 
@@ -48,7 +50,7 @@ The lead agent owns integration and repository-level decisions unless project in
 
 ## Test while implementing
 
-Run focused tests relevant to changed behavior during implementation.
+Match verification depth to the change's risk and the evidence needed to establish its completion criteria. Use meaningful tests when they establish relevant behavior; avoid unnecessary tests and redundant checks. Do not impose test-first development on every task.
 
 Before declaring a substantial unit of work complete, run the repository's applicable verification gates. These may include:
 
@@ -61,6 +63,8 @@ Before declaring a substantial unit of work complete, run the repository's appli
 - other project-specific checks.
 
 Never claim a check passed unless it actually ran successfully.
+
+Report which checks passed, what behavior remains untested, and any blockers. Distinguish verified results from assumptions.
 
 Do not weaken tests, types, validation, or quality gates merely to obtain a passing result.
 

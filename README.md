@@ -2,6 +2,12 @@
 
 This repository contains reusable Codex skills and their supporting references. Skills here are maintained as source and synchronized to the user's global Codex skills directory at `$HOME/.codex/skills`.
 
+## Engineering principles and AGENTS.md
+
+The root [`AGENTS.md`](AGENTS.md) contains four shared software-development principles. Codex applies it when working in this repository. A global `~/.codex/AGENTS.md` applies across repositories for that user; repository instructions add local context and may be more specific. The global file is user-owned and can contain other instructions, including code-commenting guidance.
+
+Installing these principles globally is optional. To do so, review the **Software changes** section in this repository's `AGENTS.md` and append or merge that section into your global `~/.codex/AGENTS.md`. Preserve the file's existing contents and reconcile any duplicate or conflicting guidance manually. Do not replace the global file with the repository file. On Windows, the global path is typically `$env:USERPROFILE\.codex\AGENTS.md`; on macOS and Linux, it is `$HOME/.codex/AGENTS.md`.
+
 ## Skills
 
 ### `review-agent`

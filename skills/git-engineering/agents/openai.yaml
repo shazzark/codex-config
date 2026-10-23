@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Engineering"
+  short_description: "Diagnose Git issues and repair repositories safely"
+  default_prompt: "Use $git-engineering to diagnose this repository issue and recommend the safest repair."

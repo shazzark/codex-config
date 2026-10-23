@@ -1,0 +1,4 @@
+interface:
+  display_name: "Open Source Contributor"
+  short_description: "Plan and deliver responsible open source contributions"
+  default_prompt: "Use $open-source-contributor to assess this project and guide a focused contribution."

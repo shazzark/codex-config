@@ -18,6 +18,22 @@ Example: Use `$review-agent` to compare this completed phase with its approved a
 
 The skill includes a review checklist, standardized report template, integration guidance for the existing engineering skills, and validation instructions. A documented read-only review exercise is in [VALIDATION.md](skills/review-agent/VALIDATION.md). Run the official skill-creator validator in Python UTF-8 mode as described in [the validation instructions](skills/review-agent/references/validation.md).
 
+### `git-engineering`
+
+Diagnoses Git state and common repository problems, proposes minimal safe repairs, helps recover work, and guides fork/upstream collaboration. It starts with read-only evidence, protects local and remote history, and explains command effects, including PowerShell usage.
+
+Example: Use `$git-engineering` in Diagnose mode to find why a push was rejected, or in Repair mode to recover a commit without losing current work. Use Collaborate mode for a fork, feature branch, and synchronization workflow.
+
+The skill owns Git-specific operations. Pair it with `$engineering-workflow` for substantial repository changes and `$open-source-contributor` for the full contribution lifecycle. Validation and the simulated repository exercise are documented in [its validation reference](skills/git-engineering/references/validation.md).
+
+### `open-source-contributor`
+
+Guides responsible contributions from repository discovery and maintenance/license review through substantiated issues, focused implementation, project-prescribed checks, professional pull requests, and constructive follow-up. It supports any relevant language or framework and delegates implementation, security, testing, documentation, frontend, and review criteria to the existing specialist skills.
+
+Example: Use `$open-source-contributor` to assess a public project and identify a justified contribution before making changes, or to prepare an approved fix as a focused PR with honest verification results.
+
+It discourages speculative technology migrations, mass-generated PRs, fabricated issues, maintainer spam, and inflated contribution claims. See [its read-only assessment and validation instructions](skills/open-source-contributor/references/validation.md).
+
 ### `engineering-workflow`
 
 Coordinates substantial repository work through inspection, proportional planning, incremental implementation, verification, review, documentation, and safe local checkpoints. Use it for features, refactors, or multi-phase changes; it is not needed for trivial edits or simple questions.

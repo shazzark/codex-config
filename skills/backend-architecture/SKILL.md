@@ -19,6 +19,8 @@ Keep the design proportional to the application. Prefer the simplest structure t
 6. Plan tests and operational behavior at the boundaries that matter. Use the `engineering-workflow` skill for phased implementation, repository checks, documentation, and checkpoints. Use `debugging-workflow` when the primary task is diagnosing an observed failure.
 7. Review the result against the checklist below. Record important tradeoffs and decisions in the project's existing documentation when useful.
 
+For folder organization, layer responsibilities, feature-local versus shared code, and Express/Fastify layout differences, read [Project organization patterns](references/project-organization.md). Preserve existing structure unless a justified, explicitly scoped restructuring is part of the task.
+
 ## Architecture principles
 
 - Organize by feature or business capability when that makes ownership and change easier to follow. A feature may contain its HTTP interface, application logic, domain rules, data access, and tests. Avoid a global `controllers/`, `services/`, `repositories/` tree that scatters every feature by technical type when that harms cohesion.

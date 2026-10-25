@@ -110,7 +110,7 @@ The skill covers proportionate architecture, feature cohesion, dependency direct
 
 Pair it with `$engineering-workflow` for substantial phased implementation, verification, documentation, and Git checkpoints. Pair it with `$debugging-workflow` when investigating an observed failure; use architecture guidance only if evidence points to a structural cause. The backend skill guides design, while those workflow skills retain execution and diagnostic responsibilities.
 
-Scenario exercises are recorded in [skills/backend-architecture/VALIDATION.md](skills/backend-architecture/VALIDATION.md). Detailed guidance lives in [Node.js and TypeScript patterns](skills/backend-architecture/references/node-typescript.md) and [quality and operations](skills/backend-architecture/references/quality-and-operations.md).
+Scenario exercises are recorded in [skills/backend-architecture/VALIDATION.md](skills/backend-architecture/VALIDATION.md). Detailed guidance lives in [project organization patterns](skills/backend-architecture/references/project-organization.md), [Node.js and TypeScript patterns](skills/backend-architecture/references/node-typescript.md), [quality and operations](skills/backend-architecture/references/quality-and-operations.md), and [system-design decisions](skills/backend-architecture/references/system-design-decisions.md).
 
 ### `design-system-engineering`
 

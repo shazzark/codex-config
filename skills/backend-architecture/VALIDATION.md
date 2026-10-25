@@ -77,3 +77,25 @@ These six additional scenarios were reviewed as design exercises against the new
 ## Validation scope and limitations
 
 All six new scenarios and the original three scenarios are design exercises, not executable tests. The review checked whether recommendations follow stated requirements, preserve existing conventions, maintain dependency direction, and avoid unnecessary services, layers, or infrastructure. No runtime correctness, performance, availability, migration safety, or operational recovery was tested. The skill provides decision prompts; real estimates and choices still depend on product requirements, workload evidence, team capacity, and the target environment.
+
+## Project-organization exercises
+
+These bounded exercises checked the added organization guidance conceptually. No application code was generated or executed.
+
+### 1. Small stateless API
+
+**Scenario:** A stateless API exposes one simple endpoint with a small validation rule and no persistent storage requirement.
+
+**Guidance outcome:** Use a minimal startup/composition entrypoint and a route/handler with inline or nearby validation and a focused function. Add only useful tests. Do not create controller, service, repository, domain, or interface layers that only forward the call. Keep state and external effects out unless requirements introduce them.
+
+**Evaluation:** The small-API option avoids a feature architecture template while keeping the handler easy to evolve.
+
+### 2. Feature-based application with authentication, users, and orders
+
+**Scenario:** A growing backend has authentication, user, and order capabilities, HTTP endpoints, persistence, and meaningful business rules.
+
+**Guidance outcome:** Organize `auth`, `users`, and `orders` as cohesive feature modules. Keep each feature's routes, validation, and tests local; add controllers, use cases/services, repositories, and domain rules only where responsibilities warrant them. Compose shared configuration and framework registration at startup. Keep authorization at the operation/resource boundary, expose narrow feature APIs, and avoid cross-feature private imports and cycles. Share schemas/contracts with a frontend only when actual reuse and release compatibility justify it.
+
+**Evaluation:** Feature ownership and optional layers remain clear without moving UI concerns into the backend or requiring microservices. If workers, queues, or separate services are later justified, account for their extra deployment, failure, consistency, and integration-testing costs.
+
+**Exercise type:** Both are conceptual architecture exercises. They involved no executable code, tests, or runtime verification.

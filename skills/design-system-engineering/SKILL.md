@@ -43,6 +43,7 @@ Read only the guidance relevant to the current task:
 ## Skill boundaries
 
 - Use `$engineering-workflow` for phased repository work, implementation, checks, documentation, and Git checkpoints.
+- Use `$frontend-experience` for visual direction and its React/Next.js application-structure reference; this skill owns reusable visual foundations, component variants, accessibility, and design-system maintenance.
 - Use `$backend-architecture` for backend modules, APIs, persistence boundaries, workers, and deployment architecture.
 - Use `$security-engineering` for application and platform security controls; follow its guidance for sensitive UI flows and data exposure.
 - Use `$debugging-workflow` when diagnosing an observed UI defect; use this skill for design-system causes only when evidence supports that connection.

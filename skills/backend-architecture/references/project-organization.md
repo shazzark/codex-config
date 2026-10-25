@@ -73,7 +73,7 @@ A global directory is useful when it provides a genuinely shared policy, adapter
 
 The backend owns server-side APIs, authorization, business rules, persistence, and background work. The frontend owns UI components, React hooks and context, page/route rendering, client-side services, and client state management. Keep these concerns in their respective application areas; a shared repository does not make them one layer.
 
-Frontend feature folders may consume backend APIs through a client/service and typed contracts. Share API schemas or generated contracts only when there is actual reuse and a compatible build/release model; keep runtime validation at the server boundary regardless. Do not move UI state or React hooks into backend modules. For UI structure, accessibility, and visual behavior, consult [design-system-engineering](../../design-system-engineering/SKILL.md) and [frontend-experience](../../frontend-experience/SKILL.md).
+Frontend feature folders may consume backend APIs through a client/service and typed contracts. Share API schemas or generated contracts only when there is actual reuse and a compatible build/release model; keep runtime validation at the server boundary regardless. Do not move UI state or React hooks into backend modules. For application folders and React/Next.js boundaries, consult [frontend application architecture](../../frontend-experience/references/application-architecture.md); for visual direction and foundations, consult [frontend-experience](../../frontend-experience/SKILL.md) and [design-system-engineering](../../design-system-engineering/SKILL.md).
 
 ## Architecture selection
 

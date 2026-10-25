@@ -122,11 +122,11 @@ Limitations: design exercises do not prove accessibility conformance, device/bro
 
 ### `frontend-experience`
 
-Chooses a product-appropriate visual direction for new websites and audits existing websites for focused, evidence-based refinement. Its style library distinguishes visual styles from layout patterns, interaction techniques, and surface treatments, and covers accessibility, performance, and common implementation mistakes. Existing-site audits preserve behavior and brand identity, avoid backend changes, and require approval before substantial redesigns.
+Chooses product-appropriate visual directions, guides proportionate React/Next.js application structure, and audits existing websites for focused, evidence-based refinement. Its style library distinguishes visual styles from layout patterns, interaction techniques, and surface treatments. Existing-site audits preserve behavior and brand identity, avoid backend changes, and require approval before substantial redesigns.
 
 Example: Use `$frontend-experience` to compare a few fitting design directions for this site, explain the visual choices, and implement them using the existing design system. Or audit the current pages and propose incremental refinements without changing backend behavior.
 
-The style reference is [Website design styles](skills/frontend-experience/references/website-design-styles.md). Pair with `$design-system-engineering` for shared foundations and accessible components, `$engineering-workflow` for substantial implementation, and `$testing-engineering` for relevant verification. The complete skill installs under `$HOME/.codex/skills/frontend-experience`.
+The application guidance is in [Frontend application architecture](skills/frontend-experience/references/application-architecture.md); its scenario exercises are recorded in [skills/frontend-experience/VALIDATION.md](skills/frontend-experience/VALIDATION.md). Visual direction remains grounded in the [25-style reference](skills/frontend-experience/references/website-design-styles.md). Pair with `$design-system-engineering` for shared tokens, reusable component APIs, accessibility, and design-system maintenance; pair with `$engineering-workflow` for substantial implementation and `$testing-engineering` for relevant verification. The complete skill installs under `$HOME/.codex/skills/frontend-experience`.
 
 ### `language-engineering`
 
